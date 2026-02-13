@@ -6,7 +6,7 @@ clase pública WebDriverSingleton {
 
     WebDriverSingleton privado() {}
 
-    público estático WebDriver getDriver() {
+    público estático sincronizado WebDriver getDriver() {
         si (controlador == null) {
             System.setProperty("webdriver.chrome.driver", "ruta/a/chromedriver");
             controlador = nuevo ChromeDriver();
